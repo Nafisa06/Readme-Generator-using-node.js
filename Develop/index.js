@@ -15,11 +15,6 @@ const questions = [
     },
     {
         type: "input",
-        name: "tableOfContents",
-        message: "Type in README Table of Contents: ",
-    },
-    {
-        type: "input",
         name: "projectDescription",
         message: "Describe the project: ",
     },
