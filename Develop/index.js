@@ -63,6 +63,11 @@ function writeToFile(fileName, data) {
     });
 }
 
+]).then( (data) => {
+    writeToFile("README.md", generateMarkdown(data));
+})  
+];
+
 
 // TODO: Create a function to initialize app
 function init() {}
