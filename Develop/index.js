@@ -10,17 +10,17 @@ const questions = [
     inquirer.prompt([
     {
         type: "input",
-        name: "ProjectTitle",
+        name: "projectTitle",
         message: "Type in the README Title: ",
     },
     {
         type: "input",
-        name: "TableOfContents",
+        name: "tableOfContents",
         message: "Type in README Table of Contents: ",
     },
     {
         type: "input",
-        name: "Projectdescription",
+        name: "projectDescription",
         message: "Describe the project: ",
     },
     {
@@ -35,7 +35,7 @@ const questions = [
     },
     {
         type: "input",
-        name: "contributionGuide",
+        name: "contributors",
         message: "Name any contributors to the project: ",
     },
     {

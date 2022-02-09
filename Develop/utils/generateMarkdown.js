@@ -41,6 +41,37 @@ ${licenseLink}
 function generateMarkdown(data) {
   return `# ${data.title}
 
+  ## License
+
+${license}
+
+## Table of Contents
+* [Description](#Description) 
+* [Installation Instructions](#Installation-Instructions)
+* [Usage Instructions](#Usage-Instructions)
+* [Contribution Guide](#contribution-Guide)
+* [Tests](#Tests)
+* [Questions](#Questions)
+
+## Description
+${data.projectDescription}
+
+## Installation
+    ${data.installionInstruct}
+
+## Usage
+${data.usageInstructions}
+
+## Contribute
+${data.contributors}
+
+## Tests
+${data.tests}
+
+## Questions
+* https://github.com/${data.githubUsername}
+* ${data.email}
+
 `;
 }
 
