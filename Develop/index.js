@@ -6,7 +6,6 @@ const generateMarkdown = require("./utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input
 
-const questions = [
     inquirer.prompt([
     {
         type: "input",
@@ -52,7 +51,12 @@ const questions = [
         ]
     }
         ])
-    ]
+    
+
+    .then( (data) => {
+        writeToFile("README.md", generateMarkdown(data));
+    })  
+    
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
@@ -63,10 +67,6 @@ function writeToFile(fileName, data) {
     });
 }
 
-]).then( (data) => {
-    writeToFile("README.md", generateMarkdown(data));
-})  
-];
 
 
 // TODO: Create a function to initialize app

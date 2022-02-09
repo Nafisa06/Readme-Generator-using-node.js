@@ -43,7 +43,7 @@ function generateMarkdown(data) {
 
   ## License
 
-${license}
+${data.license}
 
 ## Table of Contents
 * [Description](#Description) 
